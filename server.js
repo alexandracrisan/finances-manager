@@ -18,7 +18,7 @@ var allowCrossDomain = function(req, res, next) {
     next();
 }
 
-app.use(express.static(__dirname + '/client'));
+app.use(express.static(__dirname + '/client/src'));
 
 // support URL-encoded bodies
 app.use(bodyParser.urlencoded({     
